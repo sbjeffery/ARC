@@ -72,3 +72,15 @@ Solutions to individual solve functions have been created to provide hard coded 
 ### notebook files.
 
 A set of notebook files with the working files and dev and testing for the individual solutions is attached. These include some additioanl links and testing for the manual_solve file.
+
+### Common features and generalisation.
+
+The ARC paper (https://arxiv.org/pdf/1911.01547.pdf) refers to the need for a better definition and benchmarks for general intellegence, arguing that the focus on narrow intellegence across a single game or problem type is a poor substitute for more work on generality and adaption in system to new unseen problems.
+
+Many of the ARC problems, being resticted to a 2D grid world, have a limited set of tranformations that can result from moving the points of the input grid to a new output grid, generally of a different shape. In the problems selected above there is a small sub set of geometric transformations, shape identification, joining points to make a line, and affine transformations (reflection, transation and rotation). These actions then form a subset of the potential transformations but with the selected problems having several of these transformation in common. In this case the subset of transformation form partial set of transformation that can be performed. While the first two problems developed our understanding on the tranformations and potential skimage implementations, the third system (36d67576) is a more difficult problem which contains a micro set of very narrow generalisation for this problem set. 
+
+The 36d67576 function can be gneralised to other problems of this type and it contains elements of the ARC problem. There is a small set of eight transformations that represent the actions available to the system. There is a skill option selection system that uses a score to evaluate the options and an update function that takes the appropriate action. So that for this fully described task the system evaluates all the eight possible transformation options, scores them and selects the appropriate action.
+
+While only possessing 'rather little mechanism and lots of blank sheets' like myself, I hope it illustrates some of the ideas.
+S
+
