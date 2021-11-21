@@ -65,8 +65,10 @@ After you've obtained the correct answer for the current test input grid, you ca
 
 When you're done with a task, use the "load task" button to open a new task.
 
-#### Individual grid solutions.
+### Individual grid solutions.
 
 Solutions to individual solve functions have been created to provide hard coded solutions which transform the input grids to the output grid for the following problems (4347f46a, 810b9b51, 9d9215db, 36db67576). These solutions are only applicable for the input/output pairs in the training and test sets for each problem. The solutions either use nupmy Affine matrix transformation directly, use skimage, to consider the problems as computer vision problem sets and to use functions like flood fill, or boundary functions to find, label and tranform the shapes. The 36db67576 problem set offer a solution in which the function tries a variety of transformations and selects the one that fits. These solutions are in the manual_solve.py file. (SJ Nov 2021)
 
+### notebook files.
 
+A set of notebook files with the working files and dev and testing for the individual solutions is attached. These include some additioanl links and testing for the manual_solve file.
